@@ -1,0 +1,610 @@
+/* =========================================
+   AXIS — Global Stylesheet
+   Premium / Minimal / Luxury theme
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ---- Core palette: white / cream / dark beige ---- */
+  --color-bg: #faf8f5;
+  --color-surface: #ffffff;
+  --color-cream: #f3ede3;
+  --color-beige-dark: #d9cdb8;
+  --color-text-primary: #2b2620;
+  --color-text-secondary: #6f665a;
+  --color-border: #e2d9c8;
+
+  /* ---- Accent: soft gold / bronze ---- */
+  --color-accent: #b8925a;
+  --color-accent-light: #d9b88a;
+  --color-accent-dark: #8c6a3f;
+
+  /* ---- Per-category accent (used sparingly: small dots, icons, underlines) ---- */
+  --accent-necklace: #b8925a;
+  --accent-bracelet: #a98d6b;
+  --accent-ring: #c9a24a;
+  --accent-earrings: #bf9a6d;
+  --accent-bangle: #9c8563;
+  --accent-watch: #7c6a4f;
+  --accent-sunglasses: #4f4740;
+  --accent-wallet: #8a6b47;
+  --accent-bag: #6e5738;
+  --accent-socks: #a58b6a;
+
+  /* ---- Typography ---- */
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ---- Spacing scale ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 9rem;
+
+  /* ---- Layout ---- */
+  --max-width: 1200px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --transition: 0.35s ease;
+}
+
+/* =========================================
+   Reset
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* =========================================
+   Typography
+   ========================================= */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+  font-weight: 500;
+}
+
+/* Small accent underline beneath section headings */
+.section-heading {
+  position: relative;
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+.section-heading.center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* =========================================
+   Layout helpers
+   ========================================= */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+section {
+  padding: var(--space-xl) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container-narrow {
+  max-width: 620px;
+}
+
+/* =========================================
+   Header / Navigation
+   ========================================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(250, 248, 245, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--color-accent-dark);
+  border-bottom-color: var(--color-accent);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* =========================================
+   Buttons
+   ========================================= */
+.btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.9rem 2.2rem;
+  border: 1px solid var(--color-text-primary);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  background-color: transparent;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-surface);
+}
+
+.btn-accent {
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-surface);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* =========================================
+   Hero
+   ========================================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: var(--space-2xl) var(--space-md);
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-bg) 100%);
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.hero p.subtitle {
+  margin-top: var(--space-sm);
+  font-size: 1.05rem;
+}
+
+.hero .btn {
+  margin-top: var(--space-md);
+}
+
+/* =========================================
+   Forms (order.html)
+   ========================================= */
+.order-form {
+  margin-top: var(--space-md);
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.order-form .btn {
+  margin-top: var(--space-sm);
+}
+
+/* =========================================
+   Thank you page
+   ========================================= */
+.thankyou-hero {
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-bg) 100%);
+}
+
+/* =========================================
+   Orders table (admin.html)
+   ========================================= */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+#ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-surface);
+  font-size: 0.88rem;
+}
+
+#ordersTable th,
+#ordersTable td {
+  text-align: left;
+  padding: 0.9rem 1.1rem;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--color-border);
+}
+
+#ordersTable th {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  background-color: var(--color-cream);
+}
+
+#ordersTable td {
+  color: var(--color-text-primary);
+}
+
+#ordersTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#ordersTable tbody tr:hover {
+  background-color: var(--color-cream);
+}
+
+/* =========================================
+   Filter bar (product.html)
+   ========================================= */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.filter-bar .btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.72rem;
+}
+
+/* =========================================
+   Product grid & cards
+   ========================================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.product-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px -20px rgba(43, 38, 32, 0.25);
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: var(--color-cream);
+}
+
+.product-info {
+  padding: var(--space-sm) var(--space-sm) var(--space-md);
+  text-align: left;
+}
+
+/* Tiny category accent dot — the ONLY place category color appears */
+.product-type-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-color: var(--color-accent);
+}
+
+.product-type-dot[data-type="necklace"]   { background-color: var(--accent-necklace); }
+.product-type-dot[data-type="bracelet"]   { background-color: var(--accent-bracelet); }
+.product-type-dot[data-type="ring"]       { background-color: var(--accent-ring); }
+.product-type-dot[data-type="earrings"]   { background-color: var(--accent-earrings); }
+.product-type-dot[data-type="bangle"]     { background-color: var(--accent-bangle); }
+.product-type-dot[data-type="watch"]      { background-color: var(--accent-watch); }
+.product-type-dot[data-type="sunglasses"] { background-color: var(--accent-sunglasses); }
+.product-type-dot[data-type="wallet"]     { background-color: var(--accent-wallet); }
+.product-type-dot[data-type="bag"]        { background-color: var(--accent-bag); }
+.product-type-dot[data-type="socks"]      { background-color: var(--accent-socks); }
+
+.product-type-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.product-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-top: 0.3rem;
+}
+
+.product-desc {
+  font-size: 0.88rem;
+  margin-top: 0.4rem;
+}
+
+.product-price {
+  margin-top: var(--space-sm);
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+}
+
+/* Category cards on homepage (reuses .product-card look, no image) */
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  text-align: center;
+}
+
+.category-card .product-info {
+  padding: var(--space-md) var(--space-sm);
+  text-align: center;
+}
+
+.category-card .product-name {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card:hover .product-name {
+  color: var(--color-accent-dark);
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg) 0 var(--space-md);
+  background-color: var(--color-cream);
+  text-align: center;
+}
+
+.site-footer .logo {
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin: var(--space-sm) 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  transition: color var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--color-accent-dark);
+}
+
+.footer-note {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-sm);
+  letter-spacing: 0.05em;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: var(--space-sm);
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: var(--space-xl) var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xs);
+  }
+
+  .product-info {
+    padding: var(--space-xs) var(--space-xs) var(--space-sm);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .container {
+    padding: 0 var(--space-sm);
+  }
+}
