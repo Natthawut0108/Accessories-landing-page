@@ -4,8 +4,8 @@
    ========================================= */
 
 // ---- CONFIG: แก้ค่า 2 ตัวนี้ให้ตรงกับของจริงก่อนใช้งาน ----
-const APPS_SCRIPT_URL = 'APPS_SCRIPT_URL_HERE'; // URL ของ Google Apps Script Web App
-const CSV_URL = 'CSV_URL_HERE'; // URL ของ Google Sheet ที่ publish เป็น CSV
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzf6amTFCQiAc4IGia2TGYsrmTlPg324bfLX6ILt8H5q3y8q1wIjz0Srx8GGzryRjj4/exec'; // URL ของ Google Apps Script Web App
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTzjAP5T226MySZLa1-tf3K71RfWEwxPq-RD7zeHIxsXMzgDxhf8TaRmjwHUSjtXuceCjenHUCvG8W7/pub?gid=0&single=true&output=csv'; // URL ของ Google Sheet ที่ publish เป็น CSV
 
 const PRODUCTS_JSON_PATH = 'products.json';
 
