@@ -1,82 +1,82 @@
 [
   {
-    "id": "axis-necklace",
+    "id": "axis-Necklace",
     "name": "AXIS Necklace",
-    "type": "necklace",
+    "type": "Necklace",
     "price": 590,
-    "image": "images/necklace.jpg",
+    "image": "images/Necklace.jpg",
     "description": "สร้อยคอดีไซน์เรียบหรู ตัดกับเส้นสายมินิมอล เติมความสง่างามให้ทุกลุค"
   },
   {
-    "id": "axis-bracelet",
+    "id": "axis-Bracelet",
     "name": "AXIS Bracelet",
-    "type": "bracelet",
+    "type": "Bracelet",
     "price": 890,
-    "image": "images/bracelet.jpg",
+    "image": "images/Bracelet.jpg",
     "description": "กำไลข้อมือทรงเรียบง่ายแต่โดดเด่น เหมาะกับทุกโอกาสตั้งแต่ลุคลำลองถึงทางการ"
   },
   {
-    "id": "axis-ring",
+    "id": "axis-Ring",
     "name": "AXIS Ring",
-    "type": "ring",
+    "type": "Ring",
     "price": 390,
-    "image": "images/ring.jpg",
+    "image": "images/Ring.jpg",
     "description": "แหวนดีไซน์เรียบคลาสสิก ใส่ได้ทุกวันโดยไม่ตกเทรนด์"
   },
   {
-    "id": "axis-earrings",
+    "id": "axis-Earrings",
     "name": "AXIS Earrings",
-    "type": "earrings",
+    "type": "Earrings",
     "price": 390,
-    "image": "images/earrings.jpg",
+    "image": "images/Earrings.jpg",
     "description": "ต่างหูทรงมินิมอล เพิ่มความหรูหราให้ใบหน้าอย่างละมุน"
   },
   {
-    "id": "axis-bangle",
+    "id": "axis-Bangle",
     "name": "AXIS Bangle",
-    "type": "bangle",
+    "type": "Bangle",
     "price": 690,
-    "image": "images/bangle.jpg",
+    "image": "images/Bangle.jpg",
     "description": "กำไลข้อมือทรงแข็งดีไซน์เรียบ สื่อถึงความมั่นใจและรสนิยมที่ชัดเจน"
   },
   {
-    "id": "axis-watch",
+    "id": "axis-Watch",
     "name": "AXIS Watch",
-    "type": "watch",
+    "type": "Watch",
     "price": 1590,
-    "image": "images/watch.jpg",
+    "image": "images/Watch.jpg",
     "description": "นาฬิกาดีไซน์พรีเมียม หน้าปัดเรียบหรู เหมาะกับผู้ที่ใส่ใจในทุกรายละเอียด"
   },
   {
-    "id": "axis-sunglasses",
+    "id": "axis-Sunglasses",
     "name": "AXIS Sunglasses",
-    "type": "sunglasses",
+    "type": "Sunglasses",
     "price": 1290,
-    "image": "images/sunglasses.jpg",
+    "image": "images/Sunglasses.jpg",
     "description": "แว่นกันแดดทรงคลาสสิก เพิ่มความมีสไตล์และปกป้องดวงตาไปพร้อมกัน"
   },
   {
-    "id": "axis-wallet",
+    "id": "axis-Wallet",
     "name": "AXIS Wallet",
-    "type": "wallet",
+    "type": "Wallet",
     "price": 790,
-    "image": "images/wallet.jpg",
+    "image": "images/Wallet.jpg",
     "description": "กระเป๋าสตางค์หนังพรีเมียม ดีไซน์เรียบง่ายแต่ดูมีระดับ"
   },
   {
-    "id": "axis-bag-crossbody",
+    "id": "axis-Bag-Crossbody",
     "name": "AXIS Bag Crossbody",
-    "type": "bag",
+    "type": "Bag",
     "price": 2090,
-    "image": "images/crossbody.jpg",
+    "image": "images/Crossbody.jpg",
     "description": "กระเป๋าสะพายข้างทรงเรียบหรู ฟังก์ชันครบ ใช้งานได้ทุกวัน"
   },
   {
-    "id": "axis-socks",
+    "id": "axis-Socks",
     "name": "AXIS Socks",
-    "type": "socks",
+    "type": "Socks",
     "price": 290,
-    "image": "images/socks.jpg",
+    "image": "images/Socks.jpg",
     "description": "ถุงเท้าดีไซน์เรียบง่าย เนื้อผ้านุ่มสบาย เติมดีเทลสไตล์ให้ทุกเอาท์ฟิต"
   }
 ]
