@@ -4,7 +4,7 @@
     "name": "AXIS Necklace",
     "type": "necklace",
     "price": 590,
-    "image": "images/Necklace.jpg",
+    "image": "Necklace.jpg",
     "description": "สร้อยคอดีไซน์เรียบหรู ตัดกับเส้นสายมินิมอล เติมความสง่างามให้ทุกลุค"
   },
   {
@@ -12,7 +12,7 @@
     "name": "AXIS Bracelet",
     "type": "bracelet",
     "price": 890,
-    "image": "images/Bracelet.jpg",
+    "image": "Bracelet.jpg",
     "description": "กำไลข้อมือทรงเรียบง่ายแต่โดดเด่น เหมาะกับทุกโอกาสตั้งแต่ลุคลำลองถึงทางการ"
   },
   {
@@ -20,7 +20,7 @@
     "name": "AXIS Ring",
     "type": "ring",
     "price": 390,
-    "image": "images/Ring.jpg",
+    "image": "Ring.jpg",
     "description": "แหวนดีไซน์เรียบคลาสสิก ใส่ได้ทุกวันโดยไม่ตกเทรนด์"
   },
   {
@@ -28,7 +28,7 @@
     "name": "AXIS Earrings",
     "type": "earrings",
     "price": 390,
-    "image": "images/Earrings.jpg",
+    "image": "Earrings.jpg",
     "description": "ต่างหูทรงมินิมอล เพิ่มความหรูหราให้ใบหน้าอย่างละมุน"
   },
   {
@@ -36,7 +36,7 @@
     "name": "AXIS Bangle",
     "type": "bangle",
     "price": 690,
-    "image": "images/Bangle.jpg",
+    "image": "Bangle.jpg",
     "description": "กำไลข้อมือทรงแข็งดีไซน์เรียบ สื่อถึงความมั่นใจและรสนิยมที่ชัดเจน"
   },
   {
@@ -44,7 +44,7 @@
     "name": "AXIS Watch",
     "type": "watch",
     "price": 1590,
-    "image": "images/Watch.jpg",
+    "image": "Watch.jpg",
     "description": "นาฬิกาดีไซน์พรีเมียม หน้าปัดเรียบหรู เหมาะกับผู้ที่ใส่ใจในทุกรายละเอียด"
   },
   {
@@ -52,7 +52,7 @@
     "name": "AXIS Sunglasses",
     "type": "sunglasses",
     "price": 1290,
-    "image": "images/Sunglasses.jpg",
+    "image": "Sunglasses.jpg",
     "description": "แว่นกันแดดทรงคลาสสิก เพิ่มความมีสไตล์และปกป้องดวงตาไปพร้อมกัน"
   },
   {
@@ -60,7 +60,7 @@
     "name": "AXIS Wallet",
     "type": "wallet",
     "price": 790,
-    "image": "images/Wallet.jpg",
+    "image": "Wallet.jpg",
     "description": "กระเป๋าสตางค์หนังพรีเมียม ดีไซน์เรียบง่ายแต่ดูมีระดับ"
   },
   {
@@ -68,7 +68,7 @@
     "name": "AXIS Bag Crossbody",
     "type": "bag",
     "price": 2090,
-    "image": "images/Crossbody.jpg",
+    "image": "Crossbody.jpg",
     "description": "กระเป๋าสะพายข้างทรงเรียบหรู ฟังก์ชันครบ ใช้งานได้ทุกวัน"
   },
   {
@@ -76,7 +76,7 @@
     "name": "AXIS Socks",
     "type": "socks",
     "price": 290,
-    "image": "images/Sock.jpg",
+    "image": "Sock.jpg",
     "description": "ถุงเท้าดีไซน์เรียบง่าย เนื้อผ้านุ่มสบาย เติมดีเทลสไตล์ให้ทุกเอาท์ฟิต"
   }
 ]
